@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e9f0f7;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #1e90ff, #00bfff);
+    padding: 60px 20px;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+.header p {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ffa500;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.services h2 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.service-box:hover {
+    background-color: #00bfff;
+}
+
+/* Process Section */
+.process {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.process h2 {
+    font-size: 2.4em;
+}
+
+.steps {
+    list-style-type: none;
+    padding: 0;
+}
+
+.steps li {
+    font-size: 1.3em;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+}
+
+.steps li:hover {
+    color: #1e90ff;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-item {
+    background-color: #1e90ff;
+    color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    max-height: 60px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq-item:hover {
+    max-height: 200px;
+}
+
+.faq-item:hover p {
+    opacity: 1;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.form-embed {
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
